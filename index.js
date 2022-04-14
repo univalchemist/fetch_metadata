@@ -35878,7 +35878,7 @@ const main = async () => {
     //    await getResult(item, index);
     // });
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = data.length - 1; i >= 0; i--) {
         const uriData = await getResult(data[i], i);
         console.log(i, data[i]);
         // await waitForSec(5);
